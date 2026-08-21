@@ -99,7 +99,7 @@ This helps identify which food items generate higher profits and which items con
 ## 👨‍💻 Project
 
 **Project Name:** MealWise  
-**Type:** Smart Canteen Management System  
+**Type:** Canteen waste predictor
 **Purpose:** Food Waste Reduction & Profit Optimization
 
 ---
