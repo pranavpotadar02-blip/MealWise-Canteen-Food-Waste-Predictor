@@ -104,4 +104,3 @@ This helps identify which food items generate higher profits and which items con
 
 ---
 
-⭐ If you find this project useful, consider giving the repository a star!
