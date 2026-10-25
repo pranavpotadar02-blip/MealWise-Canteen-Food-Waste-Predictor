@@ -1,0 +1,2 @@
+﻿Alembic migration versions will be stored here.
+Run 'alembic init migrations' (already done) and 'alembic revision' to create new migrations.
