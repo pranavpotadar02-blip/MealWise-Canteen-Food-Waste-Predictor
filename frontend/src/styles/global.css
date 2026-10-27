@@ -1,10 +1,97 @@
-/*
- * global.css
- * ─────────────────────────────────────────────────────────────────────────────
+/* ─── global.css ───────────────────────────────────────────────────────────
  * Global reset, base element styles, and typography defaults
  * for the MealWise application.
- *
- * Imports variables.css and sets baseline styles (box-sizing, font, scroll).
- *
- * This file will be implemented in the shared design system branch.
- */
+ * ────────────────────────────────────────────────────────────────────────── */
+
+@import './variables.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: var(--color-surface-muted);
+  color: var(--color-text-main);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Headings use display font */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--color-text-main);
+  margin-top: 0;
+  letter-spacing: -0.02em;
+}
+
+/* Base anchor defaults */
+a {
+  color: var(--color-brand-600);
+  text-decoration: none;
+  transition: color 0.15s ease-in-out;
+}
+
+a:hover {
+  color: var(--color-brand-700);
+}
+
+/* Form element font inheritance */
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+/* Image defaults */
+img, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid var(--color-brand-500);
+  outline-offset: 2px;
+}
+
+/* Selection colour */
+::selection {
+  background-color: var(--color-brand-100);
+  color: var(--color-brand-900);
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

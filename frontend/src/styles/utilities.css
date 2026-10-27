@@ -1,8 +1,78 @@
-/*
- * utilities.css
- * ─────────────────────────────────────────────────────────────────────────────
+/* ─── utilities.css ────────────────────────────────────────────────────────
  * Single-purpose utility classes for layout, spacing, visibility,
- * and display helpers used across the MealWise application.
- *
- * This file will be implemented in the shared design system branch.
- */
+ * glassmorphism, and display helpers across MealWise.
+ * ────────────────────────────────────────────────────────────────────────── */
+
+/* Glassmorphism effects */
+.glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glass-dark {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(51, 65, 85, 0.5);
+}
+
+/* Flex centering shorthand */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Truncate multi-line text */
+.line-clamp-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Card elevations */
+.elevation-1 {
+  box-shadow: var(--shadow-card);
+}
+
+.elevation-2 {
+  box-shadow: var(--shadow-card-md);
+}
+
+.elevation-3 {
+  box-shadow: var(--shadow-card-lg);
+}
+
+/* Smooth transition defaults */
+.transition-standard {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Screen reader only helper */
+.sr-only-custom {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

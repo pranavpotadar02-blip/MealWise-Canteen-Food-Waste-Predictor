@@ -1,9 +1,8 @@
-// Shared UI primitives for the MealWise design system.
-// Button.jsx    — primary, secondary, and danger button variants.
-// Card.jsx      — content card with optional header and footer slots.
-// Modal.jsx     — accessible modal dialog component.
-// Table.jsx     — sortable data table with pagination.
-// Badge.jsx     — status and label badge.
-// Input.jsx     — styled text input with validation feedback.
-//
-// All components will be implemented in the shared design system branch.
+// ─── UI Primitives Barrel Export ──────────────────────────────────────────────
+export { Badge } from './Badge';
+export { Button } from './Button';
+export { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from './Card';
+export { Input, Select, Textarea } from './Input';
+export { Modal, ConfirmDialog } from './Modal';
+export { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from './Table';
+export { PageLoader, EmptyState, AlertBanner } from './Feedback';
